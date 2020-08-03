@@ -1,4 +1,19 @@
 % Original Picture
+
+code = [61	103	146	66	44	45	69;
+82	124	136	64	41	38	45;
+90	137	188	92	31	45	59;
+94	142	216	119	47	91	89;
+89	144	193	85	28	50	69;
+86	130	184	68	20	33	47;
+79	118	161	60	27	49	27];
+
+kernel = [0 -1 0; -1 4 -1; 0 -1 0];
+
+ans = uint8(conv2(code,kernel));
+
+ans
+
 car = imread('redcar.jpg');
 
 % Adding noise to the original picture
